@@ -1,0 +1,455 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+      ################################# --NAV BAR-- ###########################################
+    -->
+    <style type="text/css">
+      body {
+        margin: 0;
+      }
+      a:link {
+        text-decoration: none;
+      }
+      .top-links {
+        margin: 0px;
+      }
+      #nav-bar a {
+        font-family: "Open Sans";
+        color: #000000;
+        font-size: 13px;
+      }
+      #nav-bar {
+        font-family: "Open Sans";
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 13px;
+        margin: 5px 30px 5px 30px;
+      }
+      #nav-bar .heart {
+        margin: 0 30px;
+        font-size: 20px;
+      }
+      .container-1 {
+        display: flex;
+        flex-grow: 1;
+      }
+      #nav-search {
+        display: flex;
+        align-items: center;
+        justify-content: stretch;
+      }
+      #nav-search img {
+        width: 70px;
+        padding: 0 15px 0 38px;
+      }
+      #nav-bar li {
+        font-family: Arial, Helvetica, "Open Sans";
+        font-weight: bold;
+        color: #000000;
+        display: inline;
+        margin: 20px 8px;
+      }
+
+      #nav-bar li a:hover {
+        color: #f0dede;
+      }
+      #nav-search li {
+        display: inline;
+      }
+      #login {
+        margin-right: 20px;
+        display: flex;
+        font-family: "Open Sans";
+        font-weight: bold;
+        color: #000000;
+        font-size: 15px;
+      }
+      #login a {
+        color: #2e2d2d;
+      }
+      #login a:hover {
+        color: #d8d9da;
+      }
+      #login span {
+        margin: 0 3px 0 3px;
+      }
+
+      #sky-blue {
+        padding-left: 0px;
+        height: 580px;
+        background-image: url(city-scape.svg);
+        padding-bottom: 50px;
+        margin: 8px 0px 0px 0px;
+      }
+      #friends {
+        padding-left: 240px;
+        height: 580px;
+        background-color: #273547;
+        padding-bottom: 50px;
+        display: flex;
+      }
+      #forklift {
+        padding-left: 0px;
+        height: 470px;
+        background-image: url(forklift.svg);
+        padding-bottom: 50px;
+      }
+      #options-text {
+        padding-left: 0px;
+        height: 60px;
+        background-color: white;
+        padding-bottom: 50px;
+      }
+      #options {
+        display: flex;
+        height: 400px;
+        background-color: white;
+        padding-bottom: 50px;
+        padding-left: 250px;
+      }
+      #options a {
+        font-weight: bold;
+        color: #cb3837;
+      }
+      #options a:hover {
+        text-decoration: underline;
+      }
+      #options img {
+        width: 100px;
+      }
+      #box-text-one {
+        width: 420px;
+        padding: 135px 64px 135px 340px;
+        color: white;
+      }
+      #box-text-two {
+        width: 420px;
+
+        padding: 120px 64px 64px 50px;
+        color: white;
+      }
+      #box-text-tree {
+        width: 420px;
+        padding: 135px 0 135px 240px;
+        color: white;
+      }
+      button {
+        border: none;
+        cursor: pointer;
+      }
+
+      h1 {
+        height: 140px;
+        font-family: "Open Sans";
+        font-size: 46px;
+        font-weight: normal;
+        display: block;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        color: white;
+        margin: 0;
+      }
+      h2 {
+        width: 430px;
+        height: 120px;
+        font-family: "Open Sans";
+        font-size: 38px;
+        font-weight: normal;
+        display: block;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        color: white;
+        margin: 0;
+      }
+      #text-friends {
+        margin-bottom: 40px;
+        line-height: 1.6;
+        width: 350px;
+        font-family: "Open Sans";
+        font-size: 16px;
+        margin-left: 120px;
+      }
+      h3 {
+        font-family: "Open Sans";
+        font-size: 40px;
+        font-weight: normal;
+        display: block;
+        margin-block-start: 0.83em;
+        margin-block-end: 0.83em;
+        color: white;
+        margin: 0;
+      }
+      h4 {
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 36px;
+        font-weight: normal;
+        color: black;
+        margin: 40px 0 20px 0;
+      }
+      h5 {
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 20px;
+        font-weight: normal;
+        color: black;
+        margin: 20px;
+      }
+      p {
+        margin-bottom: 40px;
+        line-height: 1.6;
+        width: 350px;
+        font-family: "Open Sans";
+        font-size: 18px;
+      }
+      .last-p {
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: normal;
+        color: black;
+        width: 260px;
+      }
+      #micro-text {
+        line-height: 1.6;
+        width: 375px;
+        font-family: "Open Sans";
+        font-size: 16px;
+        margin: 19px 0 18px 0;
+      }
+
+      #last-text {
+        display: inline;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: normal;
+        color: black;
+        margin: 50px 20px 0 450px;
+      }
+      #binoculars {
+        display: block;
+        flex-direction: row;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: normal;
+        color: black;
+        margin: 40px;
+      }
+      #mountain {
+        flex-direction: row;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: normal;
+        color: black;
+        margin: 40px;
+      }
+      #backpack {
+        flex-direction: row;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 18px;
+        font-weight: normal;
+        color: black;
+        margin: 40px;
+      }
+      #link {
+        font-weight: 600;
+        font-family: "Open Sans";
+        color: white;
+        cursor: pointer;
+      }
+      #link:hover {
+        text-decoration: underline;
+      }
+      li {
+        height: 70px;
+        font-family: "Open Sans";
+        font-size: 20px;
+      }
+
+      .first-button {
+        color: white;
+        background-color: #f09233;
+        border-radius: 20px;
+        padding: 8px 18px;
+        width: 240px;
+        font-size: 20px;
+      }
+      .search {
+        margin-right: 20px;
+        height: 40;
+        width: 69;
+        font-size: 16;
+        color: white;
+        background-color: #cb3837;
+        border-top-right-radius: 4px;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: 4px;
+      }
+      #search {
+        font-family: "Fira Mono", "Andale Mono", "Consolas", monospace;
+        font-size: 14px;
+        letter-spacing: 0px;
+        border: none;
+        height: 40px;
+        width: 100%;
+        padding-left: 10px;
+        border-radius: 0;
+        background-color: #e6e2e2;
+      }
+      .first-button:hover {
+        background-color: #e97e11;
+        transition: all 0.5s;
+      }
+      .second-button {
+        color: white;
+        background-color: #cb3837;
+        border-radius: 20px;
+        padding: 8px 18px;
+        width: 360px;
+        font-size: 20px;
+        margin-left: 40px;
+      }
+      .tree-button {
+        color: white;
+        background-color: #34495e;
+        border-radius: 20px;
+        padding: 10px 20px;
+        width: 125px;
+        font-size: 16px;
+      }
+      .tree-button:hover {
+        transition: all 0.5s;
+        background-color: #000000;
+      }
+    </style>
+
+    <nav id="nav-bar">
+      <div class="top-left">
+        <a class="heart" href="#">♥︎</a>
+        <span class="acronym">Neophobe Plebeian Mumpsimus</span>
+      </div>
+      <ul class="top-links">
+        <li><a href="#">npm Enterprise</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Docs</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+    </nav>
+    <hr style="color: #d7dfe96e;" />
+    <!--
+      ################################# --NAV BAR-- ###########################################
+    -->
+    <div id="nav-search">
+      <img src="npm-logo.png" alt="npm_logo" />
+      <div class="container-1">
+        <span class="icon"><i class="fa fa-search"></i></span>
+        <input type="search" id="search" placeholder="Search packages" />
+        <button class="search">Search</button>
+      </div>
+      <div id="login">
+        <a href="#">log in</a> <span>or</span> <a href="#">sign up</a>
+      </div>
+    </div>
+    <!--
+      ################################# --box one-- ###########################################
+    -->
+    <header id="sky-blue">
+      <div id="box-text-one">
+        <h1>Build amazing things</h1>
+        <p>
+          npm is the package manager for JavaScript and the world’s largest
+          software registry. Discover packages of reusable code — and assemble
+          them in powerful new ways.
+        </p>
+        <button class="first-button">Sign up</button>
+      </div>
+    </header>
+    <!--
+      ################################# --box two-- ###########################################
+    -->
+    <header id="friends">
+      <img
+        src="collaboration.svg"
+        alt="collaboration"
+        style="width: 448px;padding: 140px 60px;"
+      />
+      <div id="box-text-two">
+        <h2>npm Orgs is powerful collaboration — for free</h2>
+        <ul>
+          <li>Encourage code discovery and re-use within teams</li>
+          <li>Publish and control access to your own namespace</li>
+          <li>Manage public and private code with the same workflow</li>
+        </ul>
+        <button class="second-button">Sign up for Orgs</button>
+        <p id="text-friends">
+          or, <a href="#" id="link">Learn more about Orgs</a>
+        </p>
+      </div>
+    </header>
+    <!--
+      ################################# --box tree-- ###########################################
+    -->
+    <header id="forklift">
+      <div id="box-text-tree">
+        <h3>What is npm?</h3>
+        <p id="micro-text">
+          Use npm to install, share, and distribute code; manage dependencies in
+          your projects; and share & receive feedback with others.
+        </p>
+        <button class="tree-button">Install npm</button>
+      </div>
+    </header>
+    <!--
+      ################################# --options-- ###########################################
+    -->
+    <header id="options-text">
+      <h4>What can you make with 800,000 building blocks?</h4>
+      <p id="last-text">
+        The npm registry hosts the world’s largest collection of free, reusable
+        code.
+      </p>
+    </header>
+    <div id="options">
+      <div id="binoculars">
+        <img src="binoculars.svg" alt="binoculars" />
+        <h5>Find</h5>
+        <p class="last-p">
+          Libraries like <a id="references" href="#">jQuery</a>,
+          <a id="references" href="#">Bootstrap</a>,
+          <a id="references" href="#">React</a>, and
+          <a id="references" href="#">Angular</a>, and components from
+          frameworks such as <a id="references" href="#">Ember</a>.
+        </p>
+      </div>
+      <div id="mountain">
+        <img src="mountain-flag.svg" alt="mountain-flag" />
+        <h5>Discover</h5>
+        <p class="last-p">
+          Packages for mobile, IoT, front end, back end, robotics… everything
+          you need to start building amazing things.
+        </p>
+      </div>
+      <div id="backpack">
+        <img src="backpack.svg" alt="backpack" />
+        <h5>Build</h5>
+        <p class="last-p">
+          Assemble packages like building blocks to quickly develop awesome new
+          projects.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
